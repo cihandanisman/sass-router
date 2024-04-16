@@ -1,0 +1,60 @@
+@import "../../scss/mixins" ;
+@import "../../scss/variables" ;
+
+
+
+.home-bgImg-container {
+  @include bgImg(100vh, $main-bgImg-path);
+}
+
+.home {
+  // border: 2px solid red;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  &__name {
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #fff;
+    &--last {
+      color: red;
+      font-weight: 700;
+    }
+  }
+}
+.nav{
+    // border: 2px solid red;
+    height: 10vh;
+    padding: 1rem;
+
+    &__list{
+        text-align: right;
+    }
+    &__item{
+        display: inline;
+        padding: 1rem;
+    }
+
+    &__link{
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: $font-family;
+        // transition: all 1s;
+        @include transition(1s);
+
+
+        &:hover{
+            color: blue;
+        }
+        &--active{
+            color: $secondary-color;
+        }
+    }
+
+
+}
