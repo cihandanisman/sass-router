@@ -29,16 +29,16 @@ const Contact = () => {
 
         <footer class="middle">
           <div class="social-icons">
-            <a href="#">
+            <a href="#twitter">
               <i class="fab fa-twitter fa-2x"></i>
             </a>
-            <a href="#">
+            <a href="#facebook">
               <i class="fab fa-facebook fa-2x"></i>
             </a>
-            <a href="#">
+            <a href="#instagram">
               <i class="fab fa-instagram fa-2x"></i>
             </a>
-            <a href="#">
+            <a href="#github">
               <i class="fab fa-github fa-2x"></i>
             </a>
           </div>
