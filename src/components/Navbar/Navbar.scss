@@ -22,21 +22,26 @@
         // transition: all 1s;
         @include transition(1s);
 
-
-
-    }
-    li{
-        &:hover{
+        &:hover,
+        &:focus { // :focus'u buraya ekleyin
             color: $secondary-color;
             cursor: pointer;
         }
-        &:focus{
-            scale: 1.4;
-            color: $secondary-color;
-            background-color: wheat;
-             
-        }
+
+
+
     }
+    // li{
+    //     &:hover{
+    //         color: $secondary-color;
+    //         cursor: pointer;
+    //     }
+    //     &:focus{
+    //         scale: 1.4;
+    //         color: $secondary-color;
+
+    //     }
+    // }
 
 
 }
